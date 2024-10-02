@@ -3,7 +3,7 @@ use std::sync::Arc;
 
 use parse_display::Display;
 
-#[derive(Display, Debug, Eq, PartialEq, Clone)]
+#[derive(Display, Debug, Eq, PartialEq, Clone, Copy)]
 pub enum RelationOp {
     #[display("<")]
     LessThan,
@@ -21,7 +21,7 @@ pub enum RelationOp {
     In,
 }
 
-#[derive(Display, Debug, Eq, PartialEq, Clone)]
+#[derive(Display, Debug, Eq, PartialEq, Clone, Copy)]
 pub enum ArithmeticOp {
     #[display("+")]
     Add,
@@ -35,7 +35,7 @@ pub enum ArithmeticOp {
     Modulus,
 }
 
-#[derive(Display, Debug, Eq, PartialEq, Clone)]
+#[derive(Display, Debug, Eq, PartialEq, Clone, Copy)]
 pub enum UnaryOp {
     #[display("!")]
     Not,
